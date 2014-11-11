@@ -1,0 +1,198 @@
+img.grid{
+	width: 180px;
+	height: auto;
+	border: 3px solid white;
+}
+
+body {
+	background-color: black;
+	color: white;
+}
+
+.container{
+	position: relative;
+}
+
+#imageGrid{
+	padding-left: 4%;
+	padding-right: 4%;
+	z-index: 0;
+	display: flex;
+	flex-flow:row wrap;
+}
+
+figure.grid {
+	box-sizing: border-box;
+	margin: 10px 0px 10px 0px;
+	text-align: center;
+	/*flex-basis: 20%;*/
+}
+
+img.largePhoto{
+	width:auto;
+	height: auto;	
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+figure.largePhoto{
+	margin: 0px;
+	margin-bottom: 20px;
+	float: left;
+	z-index: 1;
+	position: fixed;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.8);
+	
+}
+
+img.btnLeft{
+	position: fixed;
+	left: 2px;
+	top: 260px;
+	width: 30px;
+	height: 30px;
+	z-index: 2;
+	padding: 20px 20px 20px 0px;
+}
+
+img.btnRight{
+	position: fixed;
+	right: 2px;
+	top: 260px;
+	width: 30px;
+	height: 30px;
+	z-index: 2;
+	padding: 20px 0px 20px 20px;
+}
+
+p{
+	color: white;
+}
+
+figcaption{
+	text-align: right;
+	position: fixed;
+	right: 40px;
+	top:20px;
+	z-index: 2;
+	color:white;
+	max-width: 250px;
+}
+
+h1 {
+	font-size: 18px;
+}
+
+figure.row1{
+	flex-basis: 100%;
+}
+
+figure.row2{
+	flex-basis: 50%;
+}
+
+figure.row3{
+	flex-basis: 33.33%;
+}
+
+figure.row4{
+	flex-basis: 25%;
+}
+
+figure.row5{
+	flex-basis: 20%;	
+}
+
+@media all and (max-width: 1100px) and (min-width: 900px) {
+	figure.row1{
+		flex-basis: 100%;
+	}
+
+	figure.row2{
+		flex-basis: 50%;
+	}
+
+	figure.row3{
+		flex-basis: 33.33%;
+	}
+
+	figure.row4{
+		flex-basis: 25%;
+	}
+
+	figure.row5{
+		flex-basis: 25%;	
+	}
+}
+
+@media all and (max-width: 899px) and (min-width: 700px) {
+	figure.row1{
+		flex-basis: 100%;
+	}
+
+	figure.row2{
+		flex-basis: 50%;
+	}
+
+	figure.row3{
+		flex-basis: 33.33%;
+	}
+
+	figure.row4{
+		flex-basis: 33.33%;
+	}
+
+	figure.row5{
+		flex-basis: 33.33%;	
+	}
+}
+
+@media all and (max-width: 699px) and (min-width: 500px) {
+	figure.row1{
+		flex-basis: 100%;
+	}
+
+	figure.row2{
+		flex-basis: 50%;
+	}
+
+	figure.row3{
+		flex-basis: 50%;
+	}
+
+	figure.row4{
+		flex-basis: 50%;
+	}
+
+	figure.row5{
+		flex-basis: 50%;	
+	}
+}
+
+
+@media all and (max-width: 499px) {
+	figure.row1{
+		flex-basis: 100%;
+	}
+
+	figure.row2{
+		flex-basis: 100%;
+	}
+
+	figure.row3{
+		flex-basis: 100%;
+	}
+
+	figure.row4{
+		flex-basis: 100%;
+	}
+
+	figure.row5{
+		flex-basis: 100%;	
+	}
+}
